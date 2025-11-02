@@ -1,0 +1,65 @@
+
+#-- PARA INSTALAR TODAS AS DEPENDÊNCIAS, ABRA O TERMINAL -> "pip install -r requirements.txt" com o terminal venv aberto. --#
+
+# --- Core Web Framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.3
+
+# --- Data Models / Validation ---
+pydantic==2.9.2
+pydantic-settings==2.6.1
+
+# --- Environment Variables (.env) ---
+python-dotenv==1.0.1
+
+# --- OpenAI Integration ---
+openai==1.52.0
+tiktoken==0.7.0
+
+# --- Supabase (Database + Auth + Storage) ---
+supabase==2.3.5
+postgrest==0.15.0
+gotrue==2.6.2
+realtime==2.0.2
+storage3==0.6.0
+
+# --- Async / Networking ---
+asyncio==3.4.3
+httpx==0.27.2
+aiohttp==3.10.8
+websockets==12.0
+
+# --- Utils / Logging ---
+python-dateutil==2.9.0.post0
+pytz==2024.1
+rich==13.9.2
+loguru==0.7.2
+
+# --- Security / Auth (future use) ---
+passlib[bcrypt]==1.7.4
+pyjwt==2.9.0
+itsdangerous==2.2.0
+
+# --- Machine Learning / NLP (embeddings) ---
+numpy==1.26.4
+scikit-learn==1.5.2
+scipy==1.14.1
+sentence-transformers==3.2.1
+
+# --- TTS / STT (Text-to-Speech / Speech-to-Text, futuras versões) ---
+gTTS==2.5.1
+SpeechRecognition==3.10.4
+pydub==0.25.1
+
+# --- Data Analysis / Gráficos (para painel de evolução do aluno) ---
+pandas==2.2.3
+matplotlib==3.9.2
+
+# --- Dev / Test / Type Checking ---
+pytest==8.3.3
+pytest-asyncio==0.23.8
+mypy==1.11.2
+types-requests==2.32.0.20240914
+
+# --- Deploy / Production ---
+gunicorn==23.0.0
