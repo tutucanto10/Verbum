@@ -4,6 +4,10 @@ from app.services.openai_service import chat_with_ai
 
 app = FastAPI()
 
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+
 class ChatRequest(BaseModel):
     user_id: str
     message: str

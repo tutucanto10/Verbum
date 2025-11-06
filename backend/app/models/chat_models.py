@@ -10,3 +10,4 @@ class ChatRequest(BaseModel):
     message: str
     language: str  # "en" ou "es"
     history: Optional[List[Message]] = []
+
